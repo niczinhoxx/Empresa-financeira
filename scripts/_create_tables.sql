@@ -9,8 +9,6 @@ status_cliente text not null check (status_cliente in ('ativo','inativo')) defau
 data_criacao  TIMESTAMP
 ); 
 
-
-
 create table contas (
 id_conta serial primary key,
 fk_cliente int references clientes (id_cliente),
